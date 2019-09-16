@@ -1,4 +1,9 @@
-Http Request Question 2
+Question 2
+
+cURL (pronounced 'curl'[4]) is a computer software project providing a library (libcurl) and command-line tool (curl) for transferring data using various protocols.
+It was first released in 1997. The name stands for "Client URL".[5] The original author and lead developer is the Swedish developer Daniel Stenberg.[1]
+
+Http Request Question 3
 
 > GET /odetocode.jpg HTTP/1.1
 > Host: odetocode.com
@@ -14,3 +19,45 @@ Http Request Question 2
 < Server: Microsoft-IIS/10.0
 < X-Powered-By: ASP.NET
 < Date: Mon, 16 Sep 2019 09:32:40 GMT
+
+question 4
+< HTTP/1.1 301 Moved Permanently
+< Date: Mon, 16 Sep 2019 09:59:23 GMT
+< Server: Apache
+< Location: https://www.jmarshall.com/easy/http/
+< Content-Length: 244
+< Content-Type: text/html; charset=iso-8859-1
+<
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://www.jmarshall.com/easy/http/">here</a>.</p>
+</body></html>
+* Connection #0 to host www.jmarshall.com left intact
+
+question 5
+* Expire in 5 ms for 1 (transfer 0x1f73e3764a0)
+*   Trying 79.125.105.113...
+* TCP_NODELAY set
+* Expire in 149991 ms for 3 (transfer 0x1f73e3764a0)
+* Expire in 200 ms for 4 (transfer 0x1f73e3764a0)
+* Connected to www.duckduckgo.com (79.125.105.113) port 80 (#0)
+> GET / HTTP/1.1
+> Host: www.duckduckgo.com
+> User-Agent: curl/7.64.0
+> Accept: */*
+>
+< HTTP/1.1 301 Moved Permanently
+< Server: nginx
+< Date: Mon, 16 Sep 2019 10:08:58 GMT
+< Content-Type: text/html
+< Content-Length: 162
+< Connection: keep-alive
+< Location: https://duckduckgo.com/
+< Strict-Transport-Security: max-age=31536000
+< Expires: Tue, 15 Sep 2020 10:08:58 GMT
+< Cache-Control: max-age=31536000
+
+
